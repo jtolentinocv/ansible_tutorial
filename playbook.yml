@@ -1,9 +1,8 @@
 ---
-<<<<<<< HEAD
 - hosts: all
   tasks:
     - name: Install Apache.
-      command: dnf install --quiet -y httpd httpd-devel
+      command: dnf install --quiet -y httpd
     - name: Copy configuration files.
       command: >
         cp httpd.conf /etc/httpd/conf/httpd.conf
@@ -12,18 +11,3 @@
     - name: Start Apache and configure it to run at boot.
       command: service httpd start
     - command: chkconfig httpd on
-=======
-- name: apache
-  hosts: linux
-  become: yes
-  beome_user: root
-  tasks:
-    -name: Insure apache is at the latest version
-    yum:
-      name: httpd
-      state: latest
-    -name: ensure apache is running
-    service:
-      name: httpd
-      state: started
->>>>>>> 2c803df (go)

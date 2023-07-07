@@ -1,3 +1,9 @@
+<<<<<<<< HEAD:updateyum.yml
+========
+<<<<<<< HEAD
+# Update YUM
+# yaml file to for ansible-playbook 
+>>>>>>>> 2c803df (go):README.md
 ---
   - name: updateyum
     hosts: linux
@@ -6,3 +12,17 @@
         yum:
           name: yum
           state: latest
+<<<<<<<< HEAD:updateyum.yml
+========
+
+
+
+=======
+# ansible_tutorial
+# This is a test bed for ansible lab
+just add for test
+>>>>>>> db49c0e (update inventory)
+
+This is my awesome Ansible repository!
+Updated in Git!
+>>>>>>>> 2c803df (go):README.md
